@@ -243,10 +243,11 @@ MS Excel
 </section>
 
 
+<!-- CONTACT POPUP SCRIPT -->
 
-<!-- CONTACT -->
+<div id="contactPopup" class="popup">
 
-<section>
+<div class="popup-content">
 
 <h2>Contact</h2>
 
@@ -255,31 +256,29 @@ MS Excel
 <p>📧 anushg659@gmail.com</p>
 
 <p>
-<a href="https://github.com/Anush13Gowda">GitHub</a>
+<a href="https://github.com/Anush13Gowda" target="_blank">GitHub</a>
 </p>
 
 <p>
-<a href="https://www.linkedin.com">LinkedIn</a>
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
 </p>
 
-</section>
+<button onclick="closeContact()">Close</button>
 
+</div>
 
-
-<!-- CONTACT POPUP SCRIPT -->
-
+</div>
 <script>
 
-function showContact(){
+function openContact(){
+document.getElementById("contactPopup").style.display="flex";
+}
 
-alert(
-"Phone: 7204040951\n\nEmail: anushg659@gmail.com"
-)
-
+function closeContact(){
+document.getElementById("contactPopup").style.display="none";
 }
 
 </script>
-
 
 </body>
 
